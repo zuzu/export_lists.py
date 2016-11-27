@@ -93,8 +93,8 @@ def get_access_token(consumer_key, consumer_secret):
 
 
 if __name__ == "__main__":
-    consumer_key = "fP6l31lWUW1p4QKITm1VlSO2p" #input('Enter your consumer key: ')
-    consumer_secret = "iWsBAyjMq85apMiXZOA7EcN2EXoaMutsMrZVOZuWYffJ0dvqa9" #input("Enter your consumer secret: ")
+    consumer_key = input('Enter your consumer key: ')
+    consumer_secret = input("Enter your consumer secret: ")
     screen_name, oauth_token, oauth_token_secret = get_access_token(consumer_key, consumer_secret)
 
     api = twitter.Api(consumer_key=consumer_key, consumer_secret=consumer_secret,
